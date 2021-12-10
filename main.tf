@@ -20,7 +20,7 @@ resource "aws_instance" "s1" {
   instance_type = var.hw
   key_name = var.key
   tags = {
-     env = lower("Test")
+     env = lower("PROD")
      Name = lower(var.name)
   }
 }
